@@ -1,0 +1,6 @@
+<div id="app" class="min-h-screen bg-black text-white" :class="{ 'bg-red-500': flash }">
+  <input v-model="tempo" type="number" class="bg-black ring-1">
+  <button @click="go">{{ run ? 'Stop' : 'Start' }}</button>
+  <button @click="tap">Tap</button>
+  {{ weights }}
+</div>
